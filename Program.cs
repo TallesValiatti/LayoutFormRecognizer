@@ -9,7 +9,7 @@ string key = "<YOUR-KEY>";
 AzureKeyCredential credential = new AzureKeyCredential(key);
 DocumentAnalysisClient client = new DocumentAnalysisClient(new Uri(endpoint), credential);
 
-var fileUrl = new Uri("https://stformeastus.blob.core.windows.net/files/Books.pdf");
+var fileUrl = new Uri("<YOUR-FILE-URL>");
 
 AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-layout", fileUrl);
 
