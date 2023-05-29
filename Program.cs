@@ -3,8 +3,8 @@ using Azure;
 using Azure.AI.FormRecognizer.DocumentAnalysis;
 using ConsoleTables;
 
-string endpoint = "https://fr-form-eastus.cognitiveservices.azure.com/";
-string key = "b5d893bd4bbc4f4889fe35ea64f698f2";
+string endpoint = "<YOUR-ENDPOINT>";
+string key = "<YOUR-KEY>";
 
 AzureKeyCredential credential = new AzureKeyCredential(key);
 DocumentAnalysisClient client = new DocumentAnalysisClient(new Uri(endpoint), credential);
